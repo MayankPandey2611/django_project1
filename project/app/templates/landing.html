@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+
+Landing_page
+
+{% endblock %}
+
+{% block css %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+{% endblock  %}
+
+{% block content %}
+
+<section class="gradient-custom">
+  <div class="container">
+    <div class="row d-flex justify-content-center pt-3">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white login-card" style="border-radius: 1rem;">
+          <div class="card-body p-4 text-center">
+
+            <div class="mb-3 mt-2 pb-3">
+
+              <h2 class="fw-bold mb-3 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-4">Please enter your login and password!</p>
+
+              <div class="form-outline form-white mb-3">
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="enter email" />
+                <label class="form-label" for="typeEmailX">Email</label>
+              </div>
+
+              <div class="form-outline form-white mb-3">
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder="enter password" />
+                <label class="form-label" for="typePasswordX">Password</label>
+              </div>
+
+              <p class="small mb-4"><a class="text-white-50" href="#!">Forgot password?</a></p>
+
+              <button class="btn btn-outline-light btn-lg px-4" type="submit">
+                <a href="home" id="log">Login</a>
+              </button>
+
+              <div class="d-flex justify-content-center text-center mt-3 pt-1">
+                <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-3 px-2"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+              </div>
+              <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>
+
+            </div>
+
+           
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

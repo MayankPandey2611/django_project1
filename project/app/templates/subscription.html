@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Register page
+{% endblock %}
+
+
+{% block css %}
+<link href = "{% static 'css/style.css'%}" />
+{% endblock %}
+
+{% block content %}
+
+
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+        <h2 class="mb-4 text-danger">📺 Subscriptions</h2>
+
+        <div class="row g-4">
+          <!-- Video Card 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="video-card p-2">
+              <img src="https://i.ytimg.com/vi/K4TOrB7at0Y/maxresdefault.jpg" class="thumbnail" alt="Video thumbnail">
+              <span class="duration">4:56</span>
+              <div class="video-info">
+                <img src="https://yt3.ggpht.com/ytc/AKedOLSDIFykEXsuh7P3KxVp9Y4Tx08J13FopBxhNABl=s88-c-k-c0x00ffffff-no-rj" class="channel-avatar" alt="Channel avatar">
+                <div class="video-details">
+                  <p class="video-title">Amazing Coding Tricks</p>
+                  <p class="channel-name">CodeWithChris</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="video-card p-2">
+              <img src="https://i.ytimg.com/vi/JGwWNGJdvx8/maxresdefault.jpg" class="thumbnail" alt="Video thumbnail">
+              <span class="duration">3:45</span>
+              <div class="video-info">
+                <img src="https://yt3.ggpht.com/ytc/AKedOLQeZsAvZXkYBefJYwIdKxjU9XPoH5LkX3ZblvEJ=s88-c-k-c0x00ffffff-no-rj" class="channel-avatar" alt="Channel avatar">
+                <div class="video-details">
+                  <p class="video-title">Shape of You Cover</p>
+                  <p class="channel-name">MusicWorld</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="video-card p-2">
+              <img src="https://i.ytimg.com/vi/3fumBcKC6RE/maxresdefault.jpg" class="thumbnail" alt="Video thumbnail">
+              <span class="duration">8:32</span>
+              <div class="video-info">
+                <img src="https://yt3.ggpht.com/ytc/AKedOLSC7y9tnY-ZQexSAtKRA1rEG8J42gT_dikjTVZ3=s88-c-k-c0x00ffffff-no-rj" class="channel-avatar" alt="Channel avatar">
+                <div class="video-details">
+                  <p class="video-title">Comedy Show Highlights</p>
+                  <p class="channel-name">Comedy Central</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 4 -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="video-card p-2">
+              <img src="https://i.ytimg.com/vi/fLexgOxsZu0/maxresdefault.jpg" class="thumbnail" alt="Video thumbnail">
+              <span class="duration">5:20</span>
+              <div class="video-info">
+                <img src="https://yt3.ggpht.com/ytc/AKedOLT6s7TG-7UN_luGhqyTxa9JOhUgNPq7BNNfhr9d=s88-c-k-c0x00ffffff-no-rj" class="channel-avatar" alt="Channel avatar">
+                <div class="video-details">
+                  <p class="video-title">Dance Challenge 2024</p>
+                  <p class="channel-name">DanceLife</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}

@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block css %}
+<link href = "{% static 'css/style.css'%}" />
+{% endblock %}
+
+{% block title %}
+about page
+{% endblock %}
+
+{% block content %}
+
+
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+        <h2 class="mb-4 text-danger">🔥 Trending</h2>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs mb-4 border-secondary" id="trendingTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music" type="button" role="tab">Music</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button" role="tab">News</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="gaming-tab" data-bs-toggle="tab" data-bs-target="#gaming" type="button" role="tab">Gaming</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="trendingTabsContent">
+          <!-- ALL Tab -->
+          <div class="tab-pane fade show active" id="all" role="tabpanel">
+            <div class="row g-4">
+              <!-- Video Card -->
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">3:33</span>
+                  <div class="video-title">Never Gonna Give You Up</div>
+                  <div class="channel-name">Rick Astley</div>
+                </div>
+              </div>
+               <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/3fumBcKC6RE/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">5:21</span>
+                  <div class="video-title">Best Standup Comedy</div>
+                  <div class="channel-name">Comedy Central</div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/fLexgOxsZu0/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">4:12</span>
+                  <div class="video-title">Dance Challenge Compilation</div>
+                  <div class="channel-name">Dance Trends</div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/IcrbM1l_BoI/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">7:48</span>
+                  <div class="video-title">Epic Travel Vlog</div>
+                  <div class="channel-name">Nomad Life</div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/3fumBcKC6RE/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">5:21</span>
+                  <div class="video-title">Best Standup Comedy</div>
+                  <div class="channel-name">Comedy Central</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- MUSIC Tab -->
+          <div class="tab-pane fade" id="music" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">2:05</span>
+                  <div class="video-title">Just Do It Song</div>
+                  <div class="channel-name">Motivation Music</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="tab-pane fade" id="music" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">2:05</span>
+                  <div class="video-title">Just Do It Song</div>
+                  <div class="channel-name">Motivation Music</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <div class="tab-pane fade" id="music" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">2:05</span>
+                  <div class="video-title">Just Do It Song</div>
+                  <div class="channel-name">Motivation Music</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="tab-pane fade" id="music" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">2:05</span>
+                  <div class="video-title">Just Do It Song</div>
+                  <div class="channel-name">Motivation Music</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- NEWS Tab -->
+          <div class="tab-pane fade" id="news" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/TxzmmhQohHs/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">9:43</span>
+                  <div class="video-title">Breaking World News</div>
+                  <div class="channel-name">Global News</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GAMING Tab -->
+          <div class="tab-pane fade" id="gaming" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="video-card p-2">
+                  <img src="https://i.ytimg.com/vi/2Xc9gXyf2G4/maxresdefault.jpg" alt="Video thumbnail">
+                  <span class="duration">15:32</span>
+                  <div class="video-title">Insane Gaming Highlights</div>
+                  <div class="channel-name">GamerZone</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}

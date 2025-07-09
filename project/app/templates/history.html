@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Contact page
+{% endblock %}
+
+{% block css %}
+<link href = "{% static 'css/style.css'%}" />
+{% endblock %}
+
+{% block content %}
+
+<!-- Main Content -->
+<main class="col-md-9 ms-sm-auto col-lg-10 px-0 py-0">
+
+  <!-- Static Options -->
+  <div class="history-options mb-4 mt-3">
+    <a href="#" class="history-option active">   <button class="btn-remove"> 👍 Liked Videos</button></a>
+    <a href="#" class="history-option">  <button class="btn-remove"> 🕒 Watch History</button></a>
+    <a href="#" class="history-option">  <button class="btn-remove">  ⏰ Watch Later Playlist</button></a>
+  </div>
+
+  <h4 class="mb-4 text-danger">🕒 History</h4>
+
+  <!-- History Items -->
+  <div class="history-item">
+    <img src="https://i.ytimg.com/vi/K4TOrB7at0Y/hqdefault.jpg" class="history-thumbnail" alt="Video">
+    <div class="history-details">
+<p>Amazing Coding Tricks</p>
+      <div class="history-meta">CodeWithChris • 235K views • Watched 2 days ago</div>
+      <button class="btn-remove">Remove from Watch History</button>
+    </div>
+  </div>
+
+  <div class="history-item">
+    <img src="https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg" class="history-thumbnail" alt="Video">
+    <div class="history-details">
+     <p>Amazing Coding Tricks</p>
+
+      <div class="history-meta">MusicWorld • 2.1M views • Watched 3 days ago</div>
+      <button class="btn-remove">Remove from Watch History</button>
+    </div>
+  </div>
+
+  <div class="history-item">
+    <img src="https://i.ytimg.com/vi/fLexgOxsZu0/hqdefault.jpg" class="history-thumbnail" alt="Video">
+    <div class="history-details">
+    <p>Amazing Coding Tricks</p>
+
+      <div class="history-meta">DanceLife • 840K views • Watched 1 week ago</div>
+      <button class="btn-remove">Remove from Watch History</button>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
